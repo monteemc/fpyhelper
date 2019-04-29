@@ -18,6 +18,9 @@ def reduce_cond1(f, p, inter, init):
     The initial value is not optional
     """
     # Avances in the next iteration, but do not calculates f(x,y), only p(x)
+    # The idea to implement the function came from a post on Stack Overflow
+    # https://stackoverflow.com/questions/3130352/stopping-a-reduce-operation-mid-way-functional-way-of-doing-partial-running-s/49887281#49887281
+    # from Grant Palmer https://stackoverflow.com/users/9447738/grant-palmer?tab=profile
 
     def stop_iter(rv=None):
         raise StopIteration(rv)
@@ -42,6 +45,10 @@ def reduce_cond2(f, p, inter, init):
     """
     # f(x,y) is evaued 3(3!!!) times inside the lambda to avoid the next
     # iteration
+    # The idea to implement the function came from a post on Stack Overflow
+    # https://stackoverflow.com/questions/3130352/stopping-a-reduce-operation-mid-way-functional-way-of-doing-partial-running-s/49887281#49887281
+    # from Grant Palmer https://stackoverflow.com/users/9447738/grant-palmer?tab=profile
+
 
     def stop_iter(rv=None):
         raise StopIteration(rv)
