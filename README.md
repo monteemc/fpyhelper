@@ -18,4 +18,5 @@ Still loking others additions to this lib...
 
 
 (1) https://stackoverflow.com/questions/3130352/stopping-a-reduce-operation-mid-way-functional-way-of-doing-partial-running-s/49887281#49887281
+
 (2) https://stackoverflow.com/users/9447738/grant-palmer?tab=profile
